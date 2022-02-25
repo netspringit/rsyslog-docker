@@ -23,7 +23,7 @@
 
 FROM vkucukcakar/runit
 
-LABEL maintainer "Volkan Kucukcakar"
+LABEL maintainer "Claudio Masia"
 
 EXPOSE 5514 5514/udp
 
@@ -33,6 +33,7 @@ VOLUME [ "/var/log", "/configurations" ]
 RUN apk add --update \
         rsyslog \
         logrotate \
+        tzdata \
     && rm -rf /var/cache/apk/*
 
 # Note: cron, netcat, gettext already installed on base image
