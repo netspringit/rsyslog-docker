@@ -21,7 +21,7 @@
 # This copyright notice and license must be retained in all files and derivative works.
 ###
 
-FROM vkucukcakar/runit
+FROM claudiomasia/runit
 
 LABEL maintainer "Claudio Masia"
 
